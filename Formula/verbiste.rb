@@ -5,6 +5,7 @@ class Verbiste < Formula
   url 'http://perso.b2b2c.ca/sarrazip/dev/verbiste-0.1.41.tar.gz'
   sha1 '39d6199bdf962c714de47b531177cb27d53e4a35'
 
+  depends_on 'pkg-config' => :build
   depends_on 'gettext'
 
   def install
