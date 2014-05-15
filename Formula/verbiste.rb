@@ -9,6 +9,8 @@ class Verbiste < Formula
   depends_on 'gettext'
 
   def install
+    # Apparently, we need to nudge the buildsystem a bit on OSX in order to *really* link against libiconv...
+    ENV['LIBS'] = "-liconv"
     system './configure', "--prefix=#{prefix}",
                           "--with-libintl-prefix=#{prefix}/opt/gettext",
                           '--without-gtk-app',
