@@ -3,7 +3,7 @@ require 'formula'
 class Verbiste < Formula
   homepage 'http://perso.b2b2c.ca/sarrazip/dev/verbiste.html'
   url 'http://perso.b2b2c.ca/sarrazip/dev/verbiste-0.1.42.tar.gz'
-  sha1 '71fd1d99faba975dbd8e94d2da6be00f26f418d8'
+  sha256 'e40eee50725f5d9ad795610226c2dbacafc065ac382b7a1113d6c7dfd1e25897'
 
   depends_on 'pkg-config' => :build
   depends_on 'gettext'
